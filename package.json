@@ -1,0 +1,19 @@
+{
+  "name": "rxjssample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "webpack": "webpack"
+  },
+  "dependencies": {
+    "rxjs": "^7.5.5",
+    "webpack": "^5.72.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  }
+}
