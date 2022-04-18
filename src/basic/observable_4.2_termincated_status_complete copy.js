@@ -10,8 +10,10 @@ However, the observable object will still be running and emit the info to any ne
 
 const source$ = new Observable(observer => {
   let number = 1;
+  let cacheNumber = [];
   const handle = setInterval(() => {
     observer.next(number++);
+    cacheNumber.push(number);
     if(number > 2){
       observer.complete();
       console.log("obersevable: I'm still working" + number);

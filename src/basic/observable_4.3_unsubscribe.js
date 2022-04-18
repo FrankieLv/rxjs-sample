@@ -34,7 +34,6 @@ const theObserver = {
   next: item => console.log("theObserver next:" + item),
   error: item => {console.log("newObserver error:" + item); subscription1.unsubscribe()}
 }
-
 let subscription1 = source$.subscribe(theObserver);
 
 
